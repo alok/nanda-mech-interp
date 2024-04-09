@@ -1,0 +1,43 @@
+[project]
+name = "nanda-mech-interp"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Alok Singh", email = "alokbeniwal@gmail.com" }
+]
+dependencies = [
+    "transformer-lens>=1.15.0",
+    "einops>=0.7.0",
+    "fancy-einsum>=0.0.3",
+    "torch>=2.2.2",
+    "jaxtyping>=0.2.28",
+    "pip>=24.0",
+    "ipykernel>=6.29.4",
+    "circuitsvis>=1.43.2",
+    "ipython>=8.23.0",
+    "datasets>=2.18.0",
+    "tqdm>=4.66.2",
+    "huggingface>=0.0.1",
+    "huggingface-hub>=0.22.2",
+    "numpy>=1.26.4",
+    "plotly>=5.20.0",
+    "rich>=13.7.1",
+    "pytest>=8.1.1",
+    "hypothesis>=6.100.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/nanda_mech_interp"]
