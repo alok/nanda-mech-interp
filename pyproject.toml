@@ -6,15 +6,13 @@ authors = [
     { name = "Alok Singh", email = "alokbeniwal@gmail.com" }
 ]
 dependencies = [
+    "pip>=24.0",
     "transformer-lens>=1.15.0",
     "einops>=0.7.0",
     "fancy-einsum>=0.0.3",
     "torch>=2.2.2",
     "jaxtyping>=0.2.28",
-    "pip>=24.0",
-    "ipykernel>=6.29.4",
     "circuitsvis>=1.43.2",
-    "ipython>=8.23.0",
     "datasets>=2.18.0",
     "tqdm>=4.66.2",
     "huggingface>=0.0.1",
@@ -22,11 +20,9 @@ dependencies = [
     "numpy>=1.26.4",
     "plotly>=5.20.0",
     "rich>=13.7.1",
-    "pytest>=8.1.1",
-    "hypothesis>=6.100.1",
 ]
 readme = "README.md"
-requires-python = ">= 3.8"
+requires-python = ">= 3.9"
 
 [build-system]
 requires = ["hatchling"]
@@ -34,7 +30,14 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "pytest>=8.1.1",
+    "hypothesis>=6.100.1",
+    "ipython>=8.23.0",
+    "ipykernel>=6.29.4",
+    "notebook>=7.1.2",
+    "jupyter>=1.0.0",
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true
