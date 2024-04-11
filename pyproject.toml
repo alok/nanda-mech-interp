@@ -18,11 +18,12 @@ dependencies = [
     "huggingface>=0.0",
     "huggingface-hub>=0.22",
     "numpy>=1",
-    "plotly>=5",
+    "plotly>=5.20.0",
     "rich>=13",
     "pytest>=8",
     "hypothesis>=6",
     "notebook>=7",
+    "matplotlib>=3.8.4",
 ]
 readme = "README.md"
 requires-python = ">= 3.9"
